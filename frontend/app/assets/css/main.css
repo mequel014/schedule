@@ -1,0 +1,35 @@
+/* frontend/app/assets/css/main.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+}
+
+.day-cell {
+  @apply border rounded-lg p-2 min-h-[100px] transition-all;
+}
+
+.day-cell:hover {
+  @apply shadow-md;
+}
+
+.day-cell.weekend {
+  @apply bg-orange-50;
+}
+
+.day-cell.holiday {
+  @apply bg-red-50;
+}
+
+.doctor-card {
+  @apply px-2 py-1 rounded text-sm cursor-move;
+}
+
+.doctor-card.dragging {
+  @apply opacity-50;
+}

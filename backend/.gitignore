@@ -1,0 +1,19 @@
+# .gitignore
+
+# Виртуальные окружения (любые папки, начинающиеся с venv_)
+venv_*/
+venv/
+.venv/
+
+# База данных SQLite
+*.db
+*.sqlite3
+
+# Python кэш
+__pycache__/
+*.py[cod]
+
+# Файлы окружения (с паролями)
+.env
+.env.local
+.DS_Store
